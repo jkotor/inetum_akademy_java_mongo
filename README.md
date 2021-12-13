@@ -57,3 +57,27 @@ procesu 'mongod' można będzie rozwiązywać zadania.
         * Spring Data Mongo
 4. Podsumowanie
 5. Krótkie Q&A  
+
+---
+
+### Procesowanie w git (przydatne dla osób z małą znajomością git-a)
+Proponuję następujące podejście w trakcie warsztatu:
+* każdy uczestnik pracuje jedynie na lokalnym repozytorium, zdalne służy jako punkt wejściowy do zadań
+* po rozwiązaniu każdej części zadań uczestnik commituje lokalnie swoje zmiany, np:
+    ```
+    git commit -m "rozwiązanie pierwszej partii zadan"
+    ```
+* następnie uczestnik pobiera kolejną część zadań (zmiany nie powinny powodować konfliktów), np:
+    ```
+    git pull
+    ```
+  i akceptujemy domyślne mergowanie branchy. To powinno wystarczyć jako minimum.
+
+Oczywiście można też rewertować własne zmiany, zapisywać na innych branchach i robić różne sztuczki w gicie jeśli wiemy co robimy. 
+W trakcie warsztatu nie będziemy wspólnie rozwiązywać ewentualnych problemów gita :). 
+
+W ostateczności rescue command (https://stackoverflow.com/questions/1146973/how-do-i-revert-all-local-changes-in-git-managed-project-to-previous-state):
+  ```
+  git reset --hard
+  ```
+    

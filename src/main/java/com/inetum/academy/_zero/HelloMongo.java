@@ -19,7 +19,7 @@ public class HelloMongo {
         }
         System.out.println();
 
-        client.close();;
+        client.close();
     }
 
 }
